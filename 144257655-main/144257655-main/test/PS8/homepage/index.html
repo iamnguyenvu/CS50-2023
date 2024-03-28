@@ -1,0 +1,91 @@
+    <!DOCTYPE html>
+
+    <html lang="en">
+        <head>
+            <!-- Meta-->
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Homepage</title>
+            <script>
+                function openSite(page) {
+                    if(page = 'G') {
+                        window.open('https://github.com/nguyenvu38');
+                    }
+                    else if(page = 'C') {
+                        window.open('https://cs50.harvard.edu/x/2023/');
+                    }
+                    else return false;
+                }
+            </script>
+
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+            <link href="styles.css" rel="stylesheet">
+
+        </head>
+        <body>
+            <div class="box1">
+                <h1>nouvenvu's homepage</h1>
+            </div>
+
+            <!-- NAVBAR -->
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">#</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="education.html">Education</a>
+                            <a class="nav-link" href="certification.html">Certification</a>
+                            <a class="nav-link" href="projects.html">Recent Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div>
+                <blockquote>
+                    <p>- Có một ngày, tôi nhìn mặt trời lặn bốn mươi bốn lần!</p>
+                    <p>Một chốc sau đó em nói thêm: </p>
+                    <p>- Ông biết đấy… Khi người ta buồn quá, người ta thích ngắm cảnh mặt trời lặn…</p>
+                    <p>- Thế cái ngày bốn mươi bốn lần mặt trời lặn ấy, có phải em buồn quá không?</p>
+                    <p>Nhưng hoàng tử bé không trả lời.</p>
+                    <p class="ref">---- trích Hoàng Tử Bé ----</p>
+                </blockquote>
+            </div>
+
+            <section class="intro">
+                <div>
+                    <button onclick="openSite('G');" class="secondary">Github</button>
+                    <button onclick="openSite('C');" class="secondary">CS50</button>
+                </div>
+            </section>
+            <div class="social-links">
+                <ul>
+                    <li>
+                        <a class="facebook-link" href="http://facebook.com" target="_blank" ></a>
+                        <svg class="" viewBox="0 0 15 15">
+                            <title>facebook</title>
+                            <path d="M15 7.54A7.5 7.5 0 106.33 15V9.73h-1.9V7.54h1.9V5.91a2.65 2.65 0 012.83-3 12.09 12.09 0 011.68.14v1.86H9.9a1.09 1.09 0 00-1.23 1.18V7.5h2.08l-.33 2.19H8.67v5.27A7.54 7.54 0 0015 7.54z"></path>
+                        </svg>
+                        <span class="image-fb">Facebook</span>
+                    </li>
+                    <li>
+                        <a class="instagram" href="http://instagram.com" target="_blank"></a>
+                        <svg class="" viewBox="0 0 13.26 13.3">
+                            <title>instagram</title>
+                            <path d="M6.63 3.29a3.43 3.43 0 103.42 3.44 3.43 3.43 0 00-3.42-3.44zm0 5.65a2.22 2.22 0 112.22-2.22 2.21 2.21 0 01-2.22 2.22z" fill="#fdfefe" fill-rule="evenodd"></path>
+                            <path d="M10.96 3.13a.8.8 0 11-.8-.8.8.8 0 01.8.8z" fill="#fdfefe"></path>
+                            <path d="M6.63.05H3.88a5 5 0 00-1.62.31 3.31 3.31 0 00-1.18.77 3.31 3.31 0 00-.77 1.18 5.29 5.29 0 00-.35 1.62v5.5a5.22 5.22 0 00.35 1.62 3.35 3.35 0 00.77 1.19 3.42 3.42 0 001.18.76 4.75 4.75 0 001.62.31h5.5a4.75 4.75 0 001.58-.32 3.15 3.15 0 001.18-.76 3.35 3.35 0 00.82-1.18 5 5 0 00.31-1.61V3.93a5 5 0 00-.31-1.62 3.46 3.46 0 00-2-2A5 5 0 009.33.05a26.88 26.88 0 01-2.7 0zm0 1.2h2.69a3.78 3.78 0 011.24.23 2.21 2.21 0 011.27 1.27 3.67 3.67 0 01.23 1.23v5.39a3.78 3.78 0 01-.23 1.24 2.21 2.21 0 01-1.27 1.27 3.77 3.77 0 01-1.24.22H3.96a3.77 3.77 0 01-1.24-.22 2.21 2.21 0 01-1.27-1.27 3.78 3.78 0 01-.23-1.24V3.98a3.67 3.67 0 01.21-1.23A2.21 2.21 0 012.7 1.48a3.78 3.78 0 011.26-.23c.68.01.89 0 2.67 0z" fill="#fdfefe" fill-rule="evenodd"></path>
+                        </svg>
+                        <span class="image-ins">Instagram</span>
+                    </li>
+                </ul>
+            </div>
+            <iframe height="0" width="0" style="display: none; visibility: hidden;" src="https://9786169.fls.doubleclick.net/activityi;src=9786169;type=val;cat=val-a0;ord=3869695253751;u1=playvalorant.com%2Fvi-vn%2F;u2=vn;u3=undefined;u4=undefined;u5=undefined;u6=desktop;u7=Chrome;gtm=45He3bt0v830720055;gcd=11l1l1l1l1;dma=0;uaa=x86;uab=64;uafvl=Chromium%3B118.0.5993.130%7CGoogle%2520Chrome%3B118.0.5993.130%7CNot%253DA%253FBrand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=15.0.0;uaw=0;epver=2;~oref=https%3A%2F%2Fplayvalorant.com%2Fvi-vn%2F?"></iframe>
+        </body>
+    </html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Football!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener("DOMContentLoaded", function() {
+                let correct = document.querySelector(".correct");
+                correct.addEventListener('click', function() {
+                    correct.style.backgroundColor = "green";
+                    document.querySelector("#feedback1").innerHTML = "Correct!";
+                });
+
+                let incorrect = document.querySelectorAll(".incorrect");
+                for (let i = 0; i < incorrect.length; i++) {
+                    incorrect[i].addEventListener('click', function() {
+                        incorrect[i].style.backgroundColor = "red";
+                        document.querySelector("#feedback1").innerHTML = "Incorrect";
+                    });
+                };
+
+                document.querySelector('#check').addEventListener('click', function() {
+                    let input = document.querySelector("input");
+                    if (input.value.toLowerCase() == "liverpool") {
+                        input.style.backgroundColor = "green";
+                        document.querySelector("#feedback2").innerHTML = "Correct!";
+                    } else {
+                        input.style.backgroundColor = "red";
+                        document.querySelector("#feedback2").innerHTML = "Incorrect";
+                    }
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Football!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Which English football team has the most C1 trophies?</h3>
+                <button class="incorrect" type="text">Manchester City</button>
+                <button class="correct" type="text">Liverpool</button>
+                <button class="incorrect" type="text">Chelsea</button>
+                <button class="incorrect" type="text">Tottenham Hotspur</button>
+                <button class="incorrect" type="text">Manchester United</button>
+                <p id="feedback1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>Which team won the C1 Cup in 2019?</h3>
+                <form>
+                    <input type="text" style="border-radius: 7px" placeholder="Football Club"></input>
+                    <button id="check" style="border-radius: 7px, color: #B0E0E6;">Check Answer</button>
+                    <p id="feedback2"></p>
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>

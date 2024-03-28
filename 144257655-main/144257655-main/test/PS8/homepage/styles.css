@@ -1,0 +1,143 @@
+body {
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(0, #fff, rgba(176, 224, 230, 0.5)), url(https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/294997716_838972203739591_4363033882981109607_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9c7eae&_nc_eui2=AeE3S6SBcIBSXxa8sOUxD-apC8w8d6cZT3ULzDx3pxlPdUPVjKq_-4bVtgJDGI1RxWmpuy4TIAyQStULPzVRg_oV&_nc_ohc=GCe1hslHvrgAX8ITKRx&_nc_ht=scontent.fsgn5-10.fna&oh=00_AfCQmoL0oxSGDc6SmF8GZAHU91NNBW8TrkuCGzY2aM33Jg&oe=658EBEAA)  no-repeat center/cover; */
+}
+
+.box1 {
+    width: 100%;
+    height: 10vh;
+    background: ##b0e0e6 top;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* animation: growth ease 1s; */
+}
+
+.quotes {
+    width: auto;
+    height: 8vh;
+    font-size: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* text-align: center; */
+    /* background-color: aqua; */
+}
+
+.ref {
+    width: auto;
+    font-style: italic;
+    font-size: 12px;
+    color: #333;
+    text-align: right;
+    padding-right: 30px;
+    /* padding-left: 200px; */
+}
+
+.intro {
+    padding: 80px 0;
+    text-align: center ;
+}
+
+.social-link {
+    text-align: center;
+}
+
+blockquote {
+    margin: 20px;
+    padding: 20px;
+    background-color: transparent;
+    border-left: 5px solid #333;
+    animation: ltr ease 1s;
+    /* opacity: 0.5; */
+}
+
+/*
+li {
+    width: 48px;
+    height: 48px;
+    margin: 6px;
+    text-align: center;
+} */
+
+.intro {
+    text-align: center;
+    margin: 20px;
+}
+
+.secondary {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* SOCIAL-LINKS */
+.social-links {
+    text-align: center;
+    margin: 20px;
+}
+
+.social-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.facebook-link,
+.instagram {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.facebook-link svg,
+.instagram svg {
+    fill: #fff; /* Màu sắc của biểu tượng (tuỳ chỉnh theo thiết kế của bạn) */
+}
+
+.image-fb,
+.image-ins {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #333; /* Màu sắc của văn bản (tuỳ chỉnh theo thiết kế của bạn) */
+    font-weight: bold;
+}
+
+
+@keyframes ltr {
+    from {
+        opacity: 0;
+        width: 0%;
+    }
+    to {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+@keyframes growth {
+    from {
+        opacity: 0;
+        height: 0%;
+    }
+    to {
+        opacity: 0.5;
+        height: 100%;
+    }
+}

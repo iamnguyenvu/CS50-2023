@@ -1,0 +1,22 @@
+sort1 uses:
+Bubble sort
+
+How do you know?:
+the running time of sort1 is least when running sort50000.
+It took real 0.895s while sort2 took 1.088s and sort3 took 2.7s
+
+sort2 uses:
+Merge sort
+
+How do you know?:
+the running time of sort2 is least in random50000 with 0.721s
+while sort1 took 5.519s and sort2 took 3.284s
+
+sort3 uses:
+Selection sort
+
+How do you know?:
+the running time of sort3 is faster than sort1 in random50000 and reserved50000 but shorter than sort2.
+It took 3.284s in random50000 and 4.181s in reserved50000
+while sort1 took 5.5519s in random50000 and 4.896s in reserved50000,
+sort2 took 0.721s in random50000 and 0.812s in reserved50000

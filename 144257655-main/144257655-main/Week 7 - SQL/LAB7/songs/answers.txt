@@ -1,0 +1,7 @@
+You would calculate the average energy, valence, and danceability of these songs. These values can give you insights into the overall mood and vibe of the listener's music taste.
+
+
+Consider the limitations of simply averaging the energy, valence, and danceability values of the top 100 songs. Some potential issues could include:
+Outliers: A few extremely high or low values could disproportionately affect the average.
+Genre Bias: Different genres may have different typical values for energy, valence, and danceability.
+Song Length: Longer or shorter songs may skew the results.
